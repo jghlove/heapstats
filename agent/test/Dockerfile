@@ -27,7 +27,7 @@ RUN dnf install -y \
     --enablerepo="*debug*" --disablerepo="*test*" \
 # If you want to test with old jdk, use below
 #    java-1.6.0-openjdk-debuginfo java-1.7.0-openjdk-debuginfo \
-    java-1.8.0-openjdk-debuginfo
+    java-1.8.0-openjdk-debuginfo java-1.8.0-openjdk-headless-debuginfo
 
 ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk
 ENV PATH ${PATH}:${JAVA_HOME}/lib/
